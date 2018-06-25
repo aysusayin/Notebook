@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aysusayin.com.mynotebook.LoginActivity"
+    tools:showIn="@layout/activity_login"
+    android:background="@android:color/white">
+
+    <aysusayin.com.mynotebook.LoginTextView
+        android:id="@+id/textViewelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/username_editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/welcomeback"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="80dp" />
+
+    <aysusayin.com.mynotebook.LoginButton
+        android:id="@+id/button3"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/password_editText"
+        android:layout_alignStart="@+id/password_editText"
+        android:layout_below="@+id/password_editText"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="@color/greenlight"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/username_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password_editText"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        app:srcCompat="@drawable/gt"
+        android:layout_above="@+id/textViewelcome"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

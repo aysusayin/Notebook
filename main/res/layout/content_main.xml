@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aysusayin.com.mynotebook.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@android:color/white">
+
+    <aysusayin.com.mynotebook.LoginButton
+        android:id="@+id/loginBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/regBtn"
+        android:layout_below="@+id/textView"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/greenlight"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="10dp" />
+
+    <aysusayin.com.mynotebook.LoginButton
+        android:id="@+id/regBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="@color/greenlight"
+        android:text="@string/signup"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="10dp" />
+
+    <aysusayin.com.mynotebook.LoginTextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Not Defterim"
+        android:textColor="@android:color/background_dark"
+        android:textColorLink="@android:color/background_dark"
+        android:textSize="60sp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="124dp"
+        android:elevation="1dp"
+        app:srcCompat="@drawable/gt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
